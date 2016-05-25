@@ -1,0 +1,32 @@
+/* header */
+
+    .header{
+
+        .header-wrap{border-radius: 0 0 5px 5px;background-image:url(../images/header-background.jpg);display: flex;justify-content: space-between;align-items: center;height: 62px;
+        }
+
+        .header-left, .header-list ul{display: flex;align-items: center;}
+        .header-left{padding-left:40px;
+            .header-logo{margin-right: 45px;}
+            .header-list ul{margin: 0;padding: 0;list-style:none;
+                li{margin-right: 15px;
+                    &:last-child{margin-right: 0;}
+                    a{position: relative;display: inline-block;padding-left:15px;text-decoration: none;color:#fff;font-weight: 700;text-transform: uppercase;
+                        &:before{content:'';display: block;position: absolute;left:0;top:calc(50% - 5px);width: 10px;height: 10px;transform-origin:50% 50%;border:3px solid #a4cbe0;transform:rotate(45deg);transition:all 300ms ease;}
+                        &:hover{
+                            &:before{transform:rotate(180deg);}
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-steam{
+            .steam-button{display: inline-block;border-radius: 3px;overflow: hidden;border:1px solid #9a5b61;margin-right:15px;transition:border-color 300ms ease;
+                &:hover{border-color:#00b411;}
+            }
+        }
+
+    }
+
+/* /header */
