@@ -1,9 +1,9 @@
-/* baraban script */
+/* baraban moving script */
 
-    function barabanScript(){
+    function barabanMovingScript(){
 
         $.ajax({
-            url:'js/json/users_list_less.json', // ajaxurl  // js/json/user_list_more.json
+            url:'js/json/viner_info.json', // ajaxurl
             data:'baraban-go',
             method:'POST',
             success:function(data){
@@ -15,7 +15,27 @@
 
     }
 
-/* baraban script */
+/* baraban moving script */
+
+/* add user to game */
+
+    function addUserToGame(){
+
+        $.ajax({
+            url:'js/json/user_add.json',
+            data:'user_add',
+            method:'POST',
+            sucess:function(data){
+
+
+
+            }
+
+        });
+
+    }
+
+/* /add user to game */
 
 
 $(document).ready(function(){
@@ -23,8 +43,6 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-
-    barabanScript(); // remove after done Radiks work
 
 });
 
