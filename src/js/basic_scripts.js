@@ -1,31 +1,49 @@
+var clock;
 
-/* scrollUp */
-function scrollUp(block,targetBlock) {
+function clockCountdown(){
+    clock = $('#main_clock').FlipClock(20/*clockSecond*/, {
+        countdown: true,
+        clockFace: 'MinuteCounter',
+        callbacks: {
+            interval: function () {
+                // Вызов каждую секунду
+            },
+            stop:function (){
+                // Вызов когда кончиться время
+                console.log('stop');
+                setTimeout(function(){
+                    animateSpidy();
+                },500);
 
-    $(block).click(function(e){
-        var target = $(targetBlock).offset().top;
-
-        $(scroller).stop().animate({scrollTop:target},800);
-        return false;
-
-        e.preventDefault();
+            }
+        }
     });
 }
 
-/*GO TO href*/
-function goTo(){
-    $('.header-menu a').click(function(e){
-        e.preventDefault();
-        var href = $(this).attr('href');
-        var target = $(href).offset().top-65;
-        $(scroller).animate({scrollTop:target},500);
-    });
+
+function animateSpidy(){
+    var spidy = $('.spidy-wrap');
+    spidy.addClass('active');
+    setTimeout(function(){
+        console.log('animate is gone');
+        // function about baraban run
+    },3400);
 }
+
+
+
+function resetClockTimer(){
+    spidy.removeClass('active');
+    clock.setTime(20/*clockSecond*/);
+    clock.start();
+}
+
+
 
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
-
+    clockCountdown();
 });
 
 $(window).resize(function() {
