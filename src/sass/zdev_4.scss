@@ -134,7 +134,10 @@
                     }
                 }
                 &.item3{width: 305px;display: flex;align-items:center;justify-content: center;text-transform: uppercase;font-weight: 500;font-size: 14px;position: relative;
-                    .user-row-percent{position: absolute;height: 30px;width: 100%;right: 0;top: 0;transform: rotate(90deg);}
+                    .user-row-percent{position: absolute;width: 30px;right: 0;top: 0;;height: 100%;text-align: center;display: flex;align-items:center;justify-content:center;
+                        &:after{content: '';bottom: 0;left: 0;background: transparent url("../images/user-row-percent.png") left top repeat-y;height: 100%;width: 1px;position: absolute;}
+                        p{transform: rotate(90deg);}
+                    }
                 }
             }
         }
