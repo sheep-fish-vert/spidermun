@@ -1,7 +1,8 @@
+var clock;
+
+
 function clockCountdown(){
-
-
-    var clock = $('#main_clock').FlipClock(clockSecond, {
+    clock = $('#main_clock').FlipClock(clockSecond, {
         countdown: true,
         clockFace: 'MinuteCounter'
     });
