@@ -115,3 +115,22 @@
     }
 
 /* /roulette-baraban */
+
+/* footer */
+
+    .footer{padding-bottom: 5px;position: relative;z-index: 0;
+
+        .footer-wrap{width: 1141px;height: 117px;background-image:url(../images/footer-background.png);background-repeat: no-repeat;margin-top: -5px;display: flex;justify-content: center;align-items: center;}
+
+        .footer-left{margin-right: 15px;}
+
+        .footer-right{
+            .footer-title{font-size: 18px;text-transform: uppercase;margin-bottom: 10px;}
+            .footer-bottom{display: flex;align-items: center;
+                .button-bottom-text{padding-left:15px;font-size: 12px;text-transform: uppercase;}
+            }
+        }
+
+    }
+
+/* /footer */
