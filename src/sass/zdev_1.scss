@@ -35,7 +35,39 @@
 
     .roulette-baraban{
 
+        .roulette-baraban-wrap{background-image:url(../images/baraban-fon-background.png);height: 73px;position: relative;display: flex;justify-content: space-between;align-items: flex-end;
 
+            .corner-block{width: 331px;height: 90px;background-repeat: no-repeat;display: flex;align-items: center;
+                &.corner-left-block{background-image:url(../images/baraban-left.png);justify-content: flex-start;padding-right:67px;padding-left:15px;}
+                &.corner-right-block{background-image:url(../images/baraban-right.png);justify-content: flex-end;padding-left:67px;padding-right:15px;}
+
+                .baraban-user-logo{width: 61px;height: 61px;border-radius: 50%;overflow: hidden;margin-right: 15px;}
+                .baraban-user-info{
+                    .baraban-user-stat{
+                        p{margin: 0 0 5px 0;font-size: 14px;
+                            span{font-weight: 700;}
+                        }
+                    }
+                    .baraban-user-name{min-width: 135px;background-color: #fff;line-height: 25px;position: relative;color:#d81b1b;font-size: 14px;text-align: center;font-weight: 500;box-shadow:4px 4px 4px 0 rgba(0, 0, 0, .17);
+                        &:before{content:'';display: block;position: absolute;top:0;right:100%;border-width: 3px;border-style:solid;border-color:#fff #fff transparent transparent;}
+                    }
+                }
+
+                .baraban-descript-text{max-width: 200px;font-size: 14px;font-weight: 700;line-height: 1.25;text-align: right;}
+
+            }
+
+            .progress-bar{position: relative;width: calc(100% - 662px);
+
+                .progress-wrap{position: relative;z-index: 1;border-radius: 4px;background-image:url(../images/progress-background.jpg);width: 521px;height: 36px;left:50%;transform:translate(-50%, 0);
+                    .progress-line{position: absolute;left: 0px;top:0px;bottom:0px;
+                        &:before{content:'';position: absolute;left:1px;top:1px;bottom:1px;right:1px;border-radius: 4px;}
+                    }
+                }
+                .progress-value{position: absolute;top:calc(50% - 7px);right: 10px;font-weight: 500;font-size: 14px;color:#001d3a;z-index: 2;}
+            }
+
+        }
 
     }
 
