@@ -1,65 +1,69 @@
-[
-    {
-        "userImg":"images/player-img1.jpg",
-        "userName":"Enigma",
-        "userItems":[
-            {
-                "itemImg":"images/user-item1.png",
-                "itemPrice":"260"
-            },
-            {
-                "itemImg":"images/user-item2.png",
-                "itemPrice":"290"
-            },
-            {
-                "itemImg":"images/user-item3.png",
-                "itemPrice":"300"
-            }
-        ],
-        "allSum":"1 000",
-        "bilet":"#8 ДО #99",
-        "winRate":"92,5%"
-    },
-    {
-        "userImg":"images/player-img2.jpg",
-        "userName":"Govorun",
-        "userItems":[
-            {
-                "itemImg":"images/user-item1.png",
-                "itemPrice":"260"
-            },
-            {
-                "itemImg":"images/user-item2.png",
-                "itemPrice":"290"
-            },
-            {
-                "itemImg":"images/user-item3.png",
-                "itemPrice":"300"
-            }
-        ],
-        "allSum":"1 000",
-        "bilet":"#8 ДО #99",
-        "winRate":"92,5%"
-    },
-    {
-        "userImg":"images/player-img3.jpg",
-        "userName":"Sorka",
-        "userItems":[
-            {
-                "itemImg":"images/user-item1.png",
-                "itemPrice":"260"
-            },
-            {
-                "itemImg":"images/user-item2.png",
-                "itemPrice":"290"
-            },
-            {
-                "itemImg":"images/user-item3.png",
-                "itemPrice":"300"
-            }
-        ],
-        "allSum":"1 000",
-        "bilet":"#8 ДО #99",
-        "winRate":"92,5%"
-    }
-]
+{
+    "progressValue":65,
+    "usersList":[
+        {
+            "userImg":"images/player-img1.jpg",
+            "userName":"Enigma",
+            "userItems":[
+                {
+                    "itemImg":"images/user-item1.png",
+                    "itemPrice":"260"
+                },
+                {
+                    "itemImg":"images/user-item2.png",
+                    "itemPrice":"290"
+                },
+                {
+                    "itemImg":"images/user-item3.png",
+                    "itemPrice":"300"
+                }
+            ],
+            "allSum":"1 000",
+            "bilet":"#8 ДО #99",
+            "winRate":"92,5%"
+        },
+        {
+            "userImg":"images/player-img2.jpg",
+            "userName":"Govorun",
+            "userItems":[
+                {
+                    "itemImg":"images/user-item1.png",
+                    "itemPrice":"260"
+                },
+                {
+                    "itemImg":"images/user-item2.png",
+                    "itemPrice":"290"
+                },
+                {
+                    "itemImg":"images/user-item3.png",
+                    "itemPrice":"300"
+                }
+            ],
+            "allSum":"1 000",
+            "bilet":"#8 ДО #99",
+            "winRate":"92,5%"
+        },
+        {
+            "userImg":"images/player-img3.jpg",
+            "userName":"Sorka",
+            "userItems":[
+                {
+                    "itemImg":"images/user-item1.png",
+                    "itemPrice":"260"
+                },
+                {
+                    "itemImg":"images/user-item2.png",
+                    "itemPrice":"290"
+                },
+                {
+                    "itemImg":"images/user-item3.png",
+                    "itemPrice":"300"
+                }
+            ],
+            "allSum":"1 000",
+            "bilet":"#8 ДО #99",
+            "winRate":"92,5%"
+        }
+    ]
+
+}
