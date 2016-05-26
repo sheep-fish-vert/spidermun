@@ -1,4 +1,4 @@
-/* baraban moving script */
+/* baraban moving script (checkpoined) */
 
     function barabanMovingScript(){
 
@@ -8,7 +8,13 @@
             method:'POST',
             success:function(data){
 
+                if(typeof data == 'object'){
+                    var usersData = data;
+                }else{
+                    var usersData = JSON.parse(data);
+                }
 
+                $('.baraban-main-wrap .user-img').eq(14).html('<img src=images/'+usersData.vinerImg+' alt="" />');
 
             }
         });
@@ -17,7 +23,7 @@
 
 /* baraban moving script */
 
-/* reload game list */
+/* reload game list (checkpoined) */
 
     function reloadGameList(){
 
@@ -118,8 +124,6 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-
-    reloadGameList();
 
 });
 

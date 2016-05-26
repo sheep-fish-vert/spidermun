@@ -1,7 +1,7 @@
 var clock;
 
 function clockCountdown(){
-    clock = $('#main_clock').FlipClock(20/*clockSecond*/, {
+    clock = $('#main_clock').FlipClock(clockSecond, {
         countdown: true,
         clockFace: 'MinuteCounter',
         callbacks: {
@@ -25,25 +25,34 @@ function animateSpidy(){
     var spidy = $('.spidy-wrap');
     spidy.addClass('active');
     setTimeout(function(){
-        console.log('animate is gone');
+        //console.log('animate is gone');
         // function about baraban run
+        $('.baraban-main-wrap').addClass('animate');
+        setTimeout(function(){
+            resetClockTimer();
+        },10000);
     },3400);
 }
 
 
 
+
 function resetClockTimer(){
+    var spidy = $('.spidy-wrap');
     spidy.removeClass('active');
-    clock.setTime(20/*clockSecond*/);
+    $('.baraban-main-wrap').removeClass('animate');
+    clock.setTime(clockSecond);
     clock.start();
 }
-
-
 
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
     clockCountdown();
+});
+
+$(window).load(function(){
+
 });
 
 $(window).resize(function() {
