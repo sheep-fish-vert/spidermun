@@ -15,9 +15,6 @@ function clockCountdown(){
                     animateSpidy();
                 },500);
 
-            },
-            reset:function (){
-                console.log('reset');
             }
         }
     });
