@@ -107,6 +107,8 @@
         }
         .user-item-percent{font-size: 14px;}
     }
+    .user-row-main{overflow: hidden;}
+    .user-row-scroll{max-height: 700px;overflow-x:hidden;overflow-y:scroll;}
     .user-row-wrap{
         .user-row{width: 100%;display: flex;border-radius: 6px;box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.17);background: linear-gradient(to bottom, #cc5452 0%,#c14947 50%,#ae3634 100%);position: relative;margin-bottom: 1px;
             &:nth-child(even){background: linear-gradient(to bottom, #b97473 0%,#b77271 25%,#b06b69 51%,#9c5755 100%);}
@@ -142,4 +144,5 @@
             }
         }
     }
+
 }
