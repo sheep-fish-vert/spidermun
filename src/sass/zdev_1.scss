@@ -33,6 +33,8 @@
 
 /* roulette-baraban */
 
+    .roulette{position: relative;z-index: 2;}
+
     .roulette-baraban{margin-top: -8px;
 
         .roulette-baraban-wrap{background-image:url(../images/baraban-fon-background.png);height: 73px;position: relative;display: flex;justify-content: space-between;align-items: flex-end;
@@ -78,9 +80,9 @@
                     &:after{border-width: 15px 12px 0 12px;border-color:#cd3a38 transparent transparent transparent;left:2px;top:1px;}
                 }
 
-                .baraban-main-wrap{width: 548px;height: 548px;position: absolute;top:9px;left: calc((474px - 548px) / 2);z-index: 1;transform-origin:50% 50%;background-image:url(../images/baraban.png);background-repeat: no-repeat;transition:transform 0ms linear 300ms;
+                .baraban-main-wrap{width: 548px;height: 548px;position: absolute;top:9px;left: calc((474px - 548px) / 2);z-index: 1;transform-origin:50% 50%;background-image:url(../images/baraban.png);background-repeat: no-repeat;transform:rotate(0deg);transition:transform 500ms linear;
                     .user-img{width: 36px;height: 36px;background-color: #fff;position: absolute;border-radius:4px;left: calc(50% - 18px);top:calc(50% - 18px);overflow: hidden;
-                        img{opacity: 0;transition:opacity 300ms ease;}
+                        img{opacity: 1;transition:opacity 300ms ease;} /* opacity:0 */
 
                         @for $i from 0 through 31{
                             &:nth-child(#{$i+1}){transform:rotate(calc((360deg / 32) * 0#{$i})) translate(0px, -237px);}
@@ -93,7 +95,7 @@
 
                     /* baraban anim */
 
-                    &.animate{animation-name:crutiBarabanYacubovich;animation-timing-function: ease-out;animation-fill-mode: forwards;animation-duration: 8s;}
+                    &.animate{animation-name:crutiBarabanYacubovich;animation-timing-function: ease-out;animation-duration: 8s;transform:rotate(-180deg);}
 
                     @keyframes crutiBarabanYacubovich{
                         0%{transform:rotate(0deg);}
