@@ -1,7 +1,7 @@
 var clock;
 
 function clockCountdown(){
-    clock = $('#main_clock').FlipClock(10/*clockSecond*/, {
+    clock = $('#main_clock').FlipClock(clockSecond, {
         countdown: true,
         clockFace: 'MinuteCounter',
         callbacks: {
@@ -41,7 +41,7 @@ function resetClockTimer(){
     var spidy = $('.spidy-wrap');
     spidy.removeClass('active');
     $('.baraban-main-wrap').removeClass('animate');
-    clock.setTime(10/*clockSecond*/);
+    clock.setTime(clockSecond);
     clock.start();
 }
 
